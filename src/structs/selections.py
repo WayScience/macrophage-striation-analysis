@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Union
+from typing import Tuple, Union
 
 
 @dataclass(slots=True)
@@ -8,5 +8,5 @@ class ImageCropSelection:
     cropped images. These are bounding boxes"""
 
     img_id: int
-    x_coord: Union[int, float]
-    y_coord: Union[int, float]
+    file_name: str
+    crop_position: Tuple[int, int, int, int]

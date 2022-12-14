@@ -1,27 +1,21 @@
 from dataclasses import dataclass
-from typing import Tuple, Union
+from typing import Dict, Tuple
 
 
 @dataclass(slots=True)
 class ImageCropSelection:
     """Data structure containing metadata information of the selected
-    cropped images.
+    cropped images."""
 
-    Parameters: 
-    -----------
-    crop_id : int
-        unique id of cropped image data:
-    file_source : str
-        Where the cropped image was taken from
+    img_id: int
+    file_name: str
+    img_size: tuple[int, int]
     crop_position: Tuple[int, int, int, int]
-        Contains the left, top, right and bottom positional values
 
-    Returns
-    -------
-    Self
-        ImageCropSelection, dataclass that contains metadata of the
-        cropped image.
-    """
-    crop_id: int
-    file_source: str
-    crop_position: Tuple[int, int, int, int]
+    def to_dict(self) -> Dict[str, str]:
+        return dict(
+            img_id=self.img_id,
+            file_name=self.file_name,
+            img_size=self.img_size,
+            crop_position=self.crop_position,
+        )

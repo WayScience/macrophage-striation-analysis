@@ -43,7 +43,8 @@ def coord_to_json(
 
 
 def json_to_coords(fpath: str | Path) -> List[ImageCropSelection]:
-    """_summary_
+    """converts Json file containing coordinate data into ImageCropSelection
+    data objects.
 
     Parameters
     ----------

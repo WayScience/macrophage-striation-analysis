@@ -11,7 +11,7 @@ from typing import List, Optional
 from PIL import Image
 
 from src.common.errors import NotCoordArrayError
-from src.guards.arrays_guards import is_array_of_coords
+from src.guards.arrays_guards import is_list_of_crop_selections
 from src.structs.selections import ImageCropSelection
 
 
@@ -67,53 +67,57 @@ def load_tiff_images(
 
 def coord_to_json(
     coord_array: List[ImageCropSelection],
-    outname: Optional[str] = "coord_chart",
-) -> None:
-    """
-    Converts an array of `ImageCropSelection` and writes it out into a json
-    file.
-
-    Generated outputs will be written in the `./results` directory
+    outname: Optional[str] = "image_cords",
+):
+    """Writes array of `ImageCropSelection`s into a JSON file format.
 
     Parameters
     ----------
-    coord_array : List[ImageCropSelection]
-        Array of ImageCropSelection Ojects
-    outname : Optional[str], optional
-        name of output file generated, by default "coord_chart"
+    coord : List[ImageCropSelection]
+        Array containing `ImageCropSelection`
+    outname : Optional, optional
+        Path to save output, by default "./"
+
+
+    Return
+    ------
+    Path
+        Returns path object where the json file was saved
     """
+    # checking if provded array is list of `ImageCropSelection`s
 
-    # type checking
-    if not is_array_of_coords(coord_array):
-        raise NotCoordArrayError(
-            "'coord_array' must contains ImageCropSelection objects"
-        )
-    if not isinstance(outname, str):
-        _type = type(outname)
-        raise TypeError(f"`outname` must be a string type, not {_type}")
+    # type checking out_path
+    accepted_path_types = (str, Path)
+    if not isinstance(outname, accepted_path_types):
+        raise TypeError("'out_path' must be str or Path type")
+    if isinstance(outname, str):
+        outname = Path(outname).absolute()
 
+    # checking if out_path contains nested directories
+    out_path_parent_dir = outname.parent
+    if not out_path_parent_dir.exists():
+        out_path_parent_dir.mkdir(parent=True, exist_ok=True)
 
-def json_to_coords(fpath: str | Path) -> List[ImageCropSelection]:
-    """converts Json file containing coordinate data into ImageCropSelection
-    data objects.
+    # extracting coordinate data
+    coord_data = {}
+    for grouped_imgs in coord_array:
 
-    Parameters
-    ----------
-    fpath : str | Path
-        path to json file containing coordinate data
+        if not is_list_of_crop_selections(grouped_imgs):
+            raise TypeError(
+                "'coord_array' must be an array of 'ImageCropSelection' objects"
+            )
 
-    Returns
-    -------
-    List[ImageCropSelection]
-        array of coordinates that represents a selection of a specific image
-    """
-    # convert str to Path type
-    if not isinstance(fpath, (str, Path)):
-        _type = type(fpath)
-        raise TypeError(f"'fpath' must be str or Path type not {_type}")
+        crop_entries_list = []
+        for crop_entry in grouped_imgs:
+            meta_data_dict = crop_entry.to_dict()
+            crop_entries_list.append(meta_data_dict)
 
-    if isinstance(fpath, str):
-        fpath = Path(fpath)
+        file_name = str(Path(crop_entry.file_name).name)
+        coord_data[file_name] = crop_entries_list
 
-    # opening json file
-    raw_coord_data = json.load(fpath)
+    # saving coordinates into JSON file
+    save_path = Path("./") / f"{outname}.json"
+    with open(save_path, "w") as outfile:
+        json.dump(coord_data, outfile)
+
+    return Path(save_path)

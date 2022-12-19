@@ -1,5 +1,5 @@
 """
-module: _io.py
+module: file_io.py
 
 Module that contains functions responsible for moving, creating, writing and
 deleting files in the current directory.
@@ -80,7 +80,6 @@ def coord_to_json(
     Path
         Returns path object where the json file was saved
     """
-    # checking if provded array is list of `ImageCropSelection`s
 
     # type checking out_path
     accepted_path_types = (str, Path)
@@ -98,6 +97,7 @@ def coord_to_json(
     cord_data = defaultdict(list)
     for grouped_imgs in cord_array:
 
+        # checking if provided array is list of `ImageCropSelection`s
         if not is_list_of_crop_selections(grouped_imgs):
             raise TypeError(
                 "'coord_array' must be an array of 'ImageCropSelection' objects"

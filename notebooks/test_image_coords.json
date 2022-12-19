@@ -1,0 +1,1280 @@
+{
+    "cell_image_1.tiff": [
+        {
+            "img_id": 1,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                0,
+                256,
+                256
+            ]
+        },
+        {
+            "img_id": 2,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                256,
+                256,
+                512
+            ]
+        },
+        {
+            "img_id": 3,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                512,
+                256,
+                768
+            ]
+        },
+        {
+            "img_id": 4,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                768,
+                256,
+                1024
+            ]
+        },
+        {
+            "img_id": 5,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                1024,
+                256,
+                1280
+            ]
+        },
+        {
+            "img_id": 6,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                1280,
+                256,
+                1536
+            ]
+        },
+        {
+            "img_id": 7,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                1536,
+                256,
+                1792
+            ]
+        },
+        {
+            "img_id": 8,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                0,
+                512,
+                256
+            ]
+        },
+        {
+            "img_id": 9,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                256,
+                512,
+                512
+            ]
+        },
+        {
+            "img_id": 10,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                512,
+                512,
+                768
+            ]
+        },
+        {
+            "img_id": 11,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                768,
+                512,
+                1024
+            ]
+        },
+        {
+            "img_id": 12,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                1024,
+                512,
+                1280
+            ]
+        },
+        {
+            "img_id": 13,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                1280,
+                512,
+                1536
+            ]
+        },
+        {
+            "img_id": 14,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                1536,
+                512,
+                1792
+            ]
+        },
+        {
+            "img_id": 15,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                0,
+                768,
+                256
+            ]
+        },
+        {
+            "img_id": 16,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                256,
+                768,
+                512
+            ]
+        },
+        {
+            "img_id": 17,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                512,
+                768,
+                768
+            ]
+        },
+        {
+            "img_id": 18,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                768,
+                768,
+                1024
+            ]
+        },
+        {
+            "img_id": 19,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                1024,
+                768,
+                1280
+            ]
+        },
+        {
+            "img_id": 20,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                1280,
+                768,
+                1536
+            ]
+        },
+        {
+            "img_id": 21,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                1536,
+                768,
+                1792
+            ]
+        },
+        {
+            "img_id": 22,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                0,
+                1024,
+                256
+            ]
+        },
+        {
+            "img_id": 23,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                256,
+                1024,
+                512
+            ]
+        },
+        {
+            "img_id": 24,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                512,
+                1024,
+                768
+            ]
+        },
+        {
+            "img_id": 25,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                768,
+                1024,
+                1024
+            ]
+        },
+        {
+            "img_id": 26,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                1024,
+                1024,
+                1280
+            ]
+        },
+        {
+            "img_id": 27,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                1280,
+                1024,
+                1536
+            ]
+        },
+        {
+            "img_id": 28,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                1536,
+                1024,
+                1792
+            ]
+        },
+        {
+            "img_id": 29,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                0,
+                1280,
+                256
+            ]
+        },
+        {
+            "img_id": 30,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                256,
+                1280,
+                512
+            ]
+        },
+        {
+            "img_id": 31,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                512,
+                1280,
+                768
+            ]
+        },
+        {
+            "img_id": 32,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                768,
+                1280,
+                1024
+            ]
+        },
+        {
+            "img_id": 33,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                1024,
+                1280,
+                1280
+            ]
+        },
+        {
+            "img_id": 34,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                1280,
+                1280,
+                1536
+            ]
+        },
+        {
+            "img_id": 35,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                1536,
+                1280,
+                1792
+            ]
+        },
+        {
+            "img_id": 36,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                0,
+                1536,
+                256
+            ]
+        },
+        {
+            "img_id": 37,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                256,
+                1536,
+                512
+            ]
+        },
+        {
+            "img_id": 38,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                512,
+                1536,
+                768
+            ]
+        },
+        {
+            "img_id": 39,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                768,
+                1536,
+                1024
+            ]
+        },
+        {
+            "img_id": 40,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                1024,
+                1536,
+                1280
+            ]
+        },
+        {
+            "img_id": 41,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                1280,
+                1536,
+                1536
+            ]
+        },
+        {
+            "img_id": 42,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                1536,
+                1536,
+                1792
+            ]
+        },
+        {
+            "img_id": 43,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                0,
+                1792,
+                256
+            ]
+        },
+        {
+            "img_id": 44,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                256,
+                1792,
+                512
+            ]
+        },
+        {
+            "img_id": 45,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                512,
+                1792,
+                768
+            ]
+        },
+        {
+            "img_id": 46,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                768,
+                1792,
+                1024
+            ]
+        },
+        {
+            "img_id": 47,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                1024,
+                1792,
+                1280
+            ]
+        },
+        {
+            "img_id": 48,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                1280,
+                1792,
+                1536
+            ]
+        },
+        {
+            "img_id": 49,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                1536,
+                1792,
+                1792
+            ]
+        },
+        {
+            "img_id": 50,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                0,
+                2048,
+                256
+            ]
+        },
+        {
+            "img_id": 51,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                256,
+                2048,
+                512
+            ]
+        },
+        {
+            "img_id": 52,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                512,
+                2048,
+                768
+            ]
+        },
+        {
+            "img_id": 53,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                768,
+                2048,
+                1024
+            ]
+        },
+        {
+            "img_id": 54,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                1024,
+                2048,
+                1280
+            ]
+        },
+        {
+            "img_id": 55,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                1280,
+                2048,
+                1536
+            ]
+        },
+        {
+            "img_id": 56,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1792,
+                1536,
+                2048,
+                1792
+            ]
+        },
+        {
+            "img_id": 57,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                0,
+                2304,
+                256
+            ]
+        },
+        {
+            "img_id": 58,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                256,
+                2304,
+                512
+            ]
+        },
+        {
+            "img_id": 59,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                512,
+                2304,
+                768
+            ]
+        },
+        {
+            "img_id": 60,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                768,
+                2304,
+                1024
+            ]
+        },
+        {
+            "img_id": 61,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                1024,
+                2304,
+                1280
+            ]
+        },
+        {
+            "img_id": 62,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                1280,
+                2304,
+                1536
+            ]
+        },
+        {
+            "img_id": 63,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_1.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                2048,
+                1536,
+                2304,
+                1792
+            ]
+        }
+    ],
+    "cell_image_2.tiff": [
+        {
+            "img_id": 1,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                0,
+                256,
+                256
+            ]
+        },
+        {
+            "img_id": 2,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                256,
+                256,
+                512
+            ]
+        },
+        {
+            "img_id": 3,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                512,
+                256,
+                768
+            ]
+        },
+        {
+            "img_id": 4,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                0,
+                768,
+                256,
+                1024
+            ]
+        },
+        {
+            "img_id": 5,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                0,
+                512,
+                256
+            ]
+        },
+        {
+            "img_id": 6,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                256,
+                512,
+                512
+            ]
+        },
+        {
+            "img_id": 7,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                512,
+                512,
+                768
+            ]
+        },
+        {
+            "img_id": 8,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                256,
+                768,
+                512,
+                1024
+            ]
+        },
+        {
+            "img_id": 9,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                0,
+                768,
+                256
+            ]
+        },
+        {
+            "img_id": 10,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                256,
+                768,
+                512
+            ]
+        },
+        {
+            "img_id": 11,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                512,
+                768,
+                768
+            ]
+        },
+        {
+            "img_id": 12,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                512,
+                768,
+                768,
+                1024
+            ]
+        },
+        {
+            "img_id": 13,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                0,
+                1024,
+                256
+            ]
+        },
+        {
+            "img_id": 14,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                256,
+                1024,
+                512
+            ]
+        },
+        {
+            "img_id": 15,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                512,
+                1024,
+                768
+            ]
+        },
+        {
+            "img_id": 16,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                768,
+                768,
+                1024,
+                1024
+            ]
+        },
+        {
+            "img_id": 17,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                0,
+                1280,
+                256
+            ]
+        },
+        {
+            "img_id": 18,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                256,
+                1280,
+                512
+            ]
+        },
+        {
+            "img_id": 19,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                512,
+                1280,
+                768
+            ]
+        },
+        {
+            "img_id": 20,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1024,
+                768,
+                1280,
+                1024
+            ]
+        },
+        {
+            "img_id": 21,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                0,
+                1536,
+                256
+            ]
+        },
+        {
+            "img_id": 22,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                256,
+                1536,
+                512
+            ]
+        },
+        {
+            "img_id": 23,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                512,
+                1536,
+                768
+            ]
+        },
+        {
+            "img_id": 24,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1280,
+                768,
+                1536,
+                1024
+            ]
+        },
+        {
+            "img_id": 25,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                0,
+                1792,
+                256
+            ]
+        },
+        {
+            "img_id": 26,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                256,
+                1792,
+                512
+            ]
+        },
+        {
+            "img_id": 27,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                512,
+                1792,
+                768
+            ]
+        },
+        {
+            "img_id": 28,
+            "file_name": "/Users/erikserrano/Development/Projects/macrophage-striation-analysis/notebooks/sample_data/cell_image_2.tiff",
+            "img_size": [
+                256,
+                256
+            ],
+            "crop_position": [
+                1536,
+                768,
+                1792,
+                1024
+            ]
+        }
+    ]
+}

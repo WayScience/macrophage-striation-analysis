@@ -10,7 +10,7 @@ from typing import List, Optional
 
 from PIL import Image
 
-from src.common._io import ImageCropSelection
+from src.structs.selections import ImageCropSelection
 
 
 def image_crop_walk(

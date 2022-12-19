@@ -60,9 +60,7 @@ def load_tiff_images(
     loaded_images = []
     for tiff_path in tiff_paths:
         tiff_img = Image.open(tiff_path)
-        loaded_images.append(tiff_img)
-
-    return loaded_images
+        yield tiff_img
 
 
 def coord_to_json(

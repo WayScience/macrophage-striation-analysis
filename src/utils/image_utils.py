@@ -51,7 +51,6 @@ def image_crop_walk(
         raise TypeError(f"'crop_width' must integer not {type(crop_height)}")
 
     # setting up cropping dimensions
-    x, y = (0, 0)  # PIL default coords: top left corner
     width, height = img_obj.size
     width_range_crop = range(0, width, crop_width)
     height_range_crop = range(0, height, crop_height)

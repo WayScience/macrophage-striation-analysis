@@ -63,14 +63,14 @@ def load_tiff_images(
 
 
 def coord_to_json(
-    coord_array: List[ImageCropSelection],
+    cord_array: List[ImageCropSelection],
     outname: Optional[str] = "image_cords",
 ):
     """Writes array of `ImageCropSelection`s into a JSON file format.
 
     Parameters
     ----------
-    coord : List[ImageCropSelection]
+    cord_array: List[ImageCropSelection]
         Array containing `ImageCropSelection`
     outname : Optional, optional
         Path to save output, by default "./"
@@ -97,7 +97,7 @@ def coord_to_json(
 
     # extracting coordinate data
     coord_data = {}
-    for grouped_imgs in coord_array:
+    for grouped_imgs in cord_array:
 
         if not is_list_of_crop_selections(grouped_imgs):
             raise TypeError(

@@ -1,7 +1,8 @@
 """
 Module: paths.py
 
-Contains data structures that
+Contains data structures that allows where to load and write files into specific
+directories.
 """
 
 from pathlib import Path
@@ -9,12 +10,34 @@ from typing import Optional
 
 
 class ProjectPaths:
+    """Contains paths necessary to load or write files into"""
+
     def __init__(self, git_proj: Optional[bool] = True):
         self.root = None
         self.results = self.root / "results"
         self.git_proj = git_proj
 
     def _get_root_path(self) -> Path:
+        """Obtains the project root path. If `git_proj` is True, it will search
+        for a `.git` folder within the root project directory.
+
+        Once the root folder is found, the function will set the `self.root`
+        attribute with the absolute path pointing the root project directory
+
+        Returns
+        -------
+        Path
+            Absolute Path object pointing to the root project folder
+
+        Raises
+        ------
+        TypeError
+            Raised if `git_proj` is not a bool type
+        FileNotFoundError
+            Raised if the root project folder is found. If `git_proj` is true,
+            then it will attempt to find both. If `git_proj` or root directory
+            is not found, then it will raise a FileNotFound error
+        """
 
         # type checking
         if not isinstance(self.git_proj, bool):

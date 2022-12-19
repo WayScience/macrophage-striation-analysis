@@ -5,6 +5,7 @@ Module that contains functions responsible for moving, creating, writing and
 deleting files in the current directory.
 """
 import json
+from collections import defaultdict
 from pathlib import Path
 from typing import Iterator, List, Optional
 
@@ -94,7 +95,7 @@ def coord_to_json(
         out_path_parent_dir.mkdir(parent=True, exist_ok=True)
 
     # extracting coordinate data
-    coord_data = {}
+    cord_data = defaultdict(list)
     for grouped_imgs in cord_array:
 
         if not is_list_of_crop_selections(grouped_imgs):
@@ -102,17 +103,15 @@ def coord_to_json(
                 "'coord_array' must be an array of 'ImageCropSelection' objects"
             )
 
-        crop_entries_list = []
+        # iterating through every crop entry and store crop metadata to dict
         for crop_entry in grouped_imgs:
             meta_data_dict = crop_entry.to_dict()
-            crop_entries_list.append(meta_data_dict)
-
-        file_name = str(Path(crop_entry.file_name).name)
-        coord_data[file_name] = crop_entries_list
+            file_name = str(Path(crop_entry.file_name).name)
+            cord_data[file_name].append(meta_data_dict)
 
     # saving coordinates into JSON file
     save_path = Path("./") / f"{outname}.json"
     with open(save_path, "w") as outfile:
-        json.dump(coord_data, outfile)
+        json.dump(cord_data, outfile)
 
     return Path(save_path)

@@ -67,7 +67,7 @@ def image_crop_walk(
         # create a crop object with given dimensions
         crop = img_obj.crop((col_i, row_i, col_i + crop_width, row_i + crop_height))
 
-        # checking if the crop size is extact, if not skip
+        # checking if the crop size is exact, if not skip
         crop_size = crop.size
         if exact_size is True and (crop_width, crop_height) != crop_size:
             continue

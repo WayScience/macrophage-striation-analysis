@@ -1,3 +1,9 @@
+"""
+Module: selection.py
+
+Contains data structure and functions that focuses on obtaining metadata
+from cropped images.
+"""
 from dataclasses import dataclass
 from typing import Dict, Tuple
 

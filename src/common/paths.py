@@ -57,7 +57,9 @@ class ProjectPaths:
         if self.git_proj:
             check = (root_path / ".git").exists()
             if check is False:
-                raise FileNotFoundError("Unable to find project root folder")
+                raise FileNotFoundError(
+                    "Unable to find `.git` folder in project root folder"
+                )
 
         self.root = root_path
         return self.root

@@ -10,7 +10,6 @@ from typing import List, Optional
 
 from PIL import Image
 
-from src.common.errors import NotCoordArrayError
 from src.guards.arrays_guards import is_list_of_crop_selections
 from src.structs.selections import ImageCropSelection
 

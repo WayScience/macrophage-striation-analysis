@@ -6,7 +6,7 @@ deleting files in the current directory.
 """
 import json
 from pathlib import Path
-from typing import List, Optional
+from typing import Iterator, List, Optional
 
 from PIL import Image
 
@@ -16,8 +16,8 @@ from src.structs.selections import ImageCropSelection
 
 def load_tiff_images(
     img_dir: str | Path,
-) -> List[Image.Image]:
-    """Loads images from given directory. Returns a list object
+) -> Iterator[Image.Image]:
+    """Loads images from given directory. Returns a list of PIL Image objects
 
     Parameters
     ----------
@@ -26,8 +26,8 @@ def load_tiff_images(
 
     Returns
     -------
-    List[PIL.TiffImagePlugin.TiffImageFile]
-        List of tuples that contains the image path and the PIL image object
+    Iterator[Image.Image]
+        Python generator that returns PIL Image objects
 
     Raises
     ------
@@ -56,10 +56,8 @@ def load_tiff_images(
 
     # loading images into memory
     # -- List[Tuple(path/to/image, PIL Image Object)]
-    loaded_images = []
     for tiff_path in tiff_paths:
-        tiff_img = Image.open(tiff_path)
-        yield tiff_img
+        yield Image.open(tiff_path)
 
 
 def coord_to_json(

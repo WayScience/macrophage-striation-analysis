@@ -13,6 +13,7 @@ class ImageCropSelection:
     crop_position: Tuple[int, int, int, int]
 
     def to_dict(self) -> Dict[str, str]:
+        """Converts `ImageCropSelection` entry into a dictionary type"""
         return dict(
             img_id=self.img_id,
             file_name=self.file_name,

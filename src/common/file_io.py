@@ -47,16 +47,23 @@ def load_tiff_images(
         raise TypeError(f"'fpath' must str or path type not {_type}")
     if isinstance(img_dir, str):
         img_dir = Path(img_dir)
+
+    # check if the file exists
     if not img_dir.exists():
         raise FileNotFoundError(f"Unable to find: {str(img_dir)}")
-    if img_dir.suffix == "tiff":
-        raise TypeError(f"Image must be .tiff format not {img_dir.suffix}")
+
+    # check if it is a directory
+    if not img_dir.is_dir():
+        raise TypeError("`img_dir` must be a directory")
 
     # grab all .tiff images within given image directory
-    tiff_paths = img_dir.glob("*.tiff")
+    tiff_paths = list(img_dir.glob("*.tiff"))
+    if not tiff_paths:
+        raise FileNotFoundError("Unable to find '.tiff' images in `img_dir`")
 
     # loading images into memory
     # -- List[Tuple(path/to/image, PIL Image Object)]
+    # using try statements to catch empty directories
     for tiff_path in tiff_paths:
         yield Image.open(tiff_path)
 

@@ -21,7 +21,7 @@ class TestUtils(unittest.TestCase):
         object"""
 
         # loading directory
-        loaded_img = load_tiff_images("./test_data")
+        loaded_img = load_tiff_images("./test_data/tiff_images")
 
         # checking if iterator is returned
         self.assertIsInstance(loaded_img, Iterator)
@@ -55,3 +55,10 @@ class TestUtils(unittest.TestCase):
         # since it's a generator we need to use the `next` function to trigger
         # the error
         self.assertRaises(FileNotFoundError, next, jpeg_img)
+
+    def test_iter_images(self) -> None:
+        """Tests if images can be iterator"""
+
+        img_iterator = load_tiff_images("./test_data/tiff_images")
+        for img_obj in img_iterator:
+            self.assertIsInstance(img_obj, Image.Image)

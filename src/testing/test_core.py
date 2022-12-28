@@ -11,6 +11,8 @@ from typing import Iterator
 from PIL import Image
 
 from src.common.file_io import load_tiff_images
+from src.structs.selections import ImageCropSelection
+from src.utils.image_utils import image_crop_walk
 
 
 class TestUtils(unittest.TestCase):
@@ -62,3 +64,26 @@ class TestUtils(unittest.TestCase):
         img_iterator = load_tiff_images("./test_data/tiff_images")
         for img_obj in img_iterator:
             self.assertIsInstance(img_obj, Image.Image)
+
+    # testing image cropper functions
+    def test_cropping(self) -> None:
+        """Positive test that checks for a List[ImageCropSelection]."""
+
+        # loading image
+        loaded_imgs = load_tiff_images("./test_data/tiff_images/")
+
+        # setting image crop size
+        width, height = (256, 256)
+
+        # cropping all images
+
+        # checking if every image cropped respects the size and objects
+        for loaded_img in loaded_imgs:
+
+            # applying crop walk to image and check types
+            cropped_cords = image_crop_walk(loaded_img, width, height)
+            self.assertIsInstance(cropped_cords, list)
+
+            # iterating all cropped objects and check type and size
+            for selection in cropped_cords:
+                self.assertIsInstance(selection, ImageCropSelection)

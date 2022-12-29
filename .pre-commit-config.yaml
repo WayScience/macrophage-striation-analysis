@@ -1,25 +1,26 @@
 repos:
-  # import formatter
+  # import formatter with black configurations
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1
     hooks:
       - id: isort
         name: isort (python)
+        args: ["--profile", "black", "--filter-files"]
 
-  # AI based foramtter, improves readability
-  - repo: https://github.com/sourcery-ai/sourcery
-    rev: v0.13.0
-    hooks:
-      - id: sourcery
-        args: [--diff=git diff HEAD, --in-place, --no-summary]
-
-  # Code foramtter for both python files and jupyter notebooks
+  # Code formatter for both python files and jupyter notebooks
   - repo: https://github.com/psf/black
     rev: 22.10.0
     hooks:
       - id: black-jupyter
       - id: black
         language_version: python3.10
+
+  # AI based formatter, improves readability
+  - repo: https://github.com/sourcery-ai/sourcery
+    rev: v0.13.0
+    hooks:
+      - id: sourcery
+        args: [--diff=git diff HEAD, --in-place, --no-summary]
 
   # type checker
   - repo: https://github.com/pre-commit/mirrors-mypy

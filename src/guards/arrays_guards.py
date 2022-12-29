@@ -4,7 +4,7 @@ module: arrays_guards.py
 Module that support strict type checking. This focuses on check the array types
 and elements within
 """
-from typing import List, Tuple, TypeGuard
+from typing import List, Tuple, TypeGuard, Union
 
 from src.structs.selections import ImageCropSelection
 
@@ -20,7 +20,7 @@ def is_list_of_crop_selections(
         Ensures that the list provided is all ImageCropSelection objects
     """
     # only accepts tuples or lists
-    accepted_types = (List, Tuple)
+    accepted_types = Union[List, Tuple]
 
     # checking for both array and element types
     return (

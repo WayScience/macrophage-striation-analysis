@@ -40,6 +40,13 @@ def image_crop_walk(
     List[ImageCropSelection]
         List of ImageCropSelection object that contains, image_id, file_name,
         and cropping dimensions
+
+    Raises
+
+    ------
+    TypeError
+        Raised if `img_obj` is not a PIL Image object
+        Raised `crop_width` or `crop_height` are not integer types
     """
     # type checking
     # change to Path type if strin    # checking crop width inputs

@@ -5,7 +5,7 @@ Contains data structure and functions that focuses on obtaining metadata
 from cropped images.
 """
 from dataclasses import dataclass
-from typing import Dict, Tuple
+from typing import Any, Dict, Tuple
 
 
 @dataclass(slots=True)
@@ -18,7 +18,7 @@ class ImageCropSelection:
     img_size: tuple[int, int]
     crop_position: Tuple[int, int, int, int]
 
-    def to_dict(self) -> Dict[str, str]:
+    def to_dict(self) -> Dict[Any, Any]:
         """Converts `ImageCropSelection` entry into a dictionary type"""
         return dict(
             img_id=self.img_id,

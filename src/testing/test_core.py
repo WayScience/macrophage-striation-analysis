@@ -5,7 +5,6 @@ Testing module focuses on testing the core functions of the analysis pipeline.
 """
 
 import unittest
-from pathlib import Path
 from typing import Iterator
 
 from PIL import Image
@@ -87,3 +86,37 @@ class TestUtils(unittest.TestCase):
             # iterating all cropped objects and check type and size
             for selection in cropped_cords:
                 self.assertIsInstance(selection, ImageCropSelection)
+
+    def test_cropping_none_object(self) -> None:
+        """Negative test that checks if the `image_crop_walk` fails when a non
+        PIL Image object is passed as a parameter. This should Raise a TypeError
+        """
+
+        # setting up inputs
+        obj = None
+        width = 256
+        height = 256
+
+        # testing inputs
+        self.assertRaises(TypeError, image_crop_walk, obj, width, height)
+
+    def test_cropping_non_int_dim(self) -> None:
+        """Negative test that checks if the provided dimensions for the crop
+        are not integer types. This should raise a TypeError"""
+        # setting up inputs
+        loaded_img = load_tiff_images("./test_data/tiff_images/")
+        loaded_img = list(loaded_img)
+
+        type_1 = "256"
+        type_2 = 256.0
+        type_3 = 256
+
+        # testing inputs all combinations
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_1, type_2)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_1, type_3)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_2, type_3)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_3, type_1)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_2, type_1)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_2, type_3)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_3, type_1)
+        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_3, type_2)

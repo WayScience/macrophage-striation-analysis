@@ -22,12 +22,6 @@ repos:
       - id: sourcery
         args: [--diff=git diff HEAD, --in-place, --no-summary]
 
-  # type checker
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.991
-    hooks:
-      - id: mypy
-
   # additional hooks found with in the pre-commit lib
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0

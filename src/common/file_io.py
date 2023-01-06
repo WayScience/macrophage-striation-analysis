@@ -63,7 +63,6 @@ def load_tiff_images(
 
     # loading images into memory
     # -- List[Tuple(path/to/image, PIL Image Object)]
-    # using try statements to catch empty directories
     for tiff_path in tiff_paths:
         yield Image.open(tiff_path)
 

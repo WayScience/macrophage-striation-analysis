@@ -5,6 +5,7 @@ Testing module focuses on testing the core functions of the analysis pipeline.
 """
 
 import unittest
+from itertools import combinations
 from pathlib import Path
 from typing import Iterator
 
@@ -89,20 +90,22 @@ class TestUtils(unittest.TestCase):
         loaded_imgs = load_tiff_images("./test_data/tiff_images/")
 
         # setting image crop size
-        width, height = (256, 256)
+        dim_array = [256, 512, 1024, 1980]
+        dim_tups = combinations(dim_array, 2)
 
         # cropping all images
 
         # checking if every image cropped respects the size and objects
-        for loaded_img in loaded_imgs:
+        for width, height in dim_tups:
+            for loaded_img in loaded_imgs:
 
-            # applying crop walk to image and check types
-            cropped_cords = image_crop_walk(loaded_img, width, height)
-            self.assertIsInstance(cropped_cords, list)
+                # applying crop walk to image and check types
+                cropped_cords = image_crop_walk(loaded_img, width, height)
+                self.assertIsInstance(cropped_cords, list)
 
-            # iterating all cropped objects and check type and size
-            for selection in cropped_cords:
-                self.assertIsInstance(selection, ImageCropSelection)
+                # iterating all cropped objects and check type and size
+                for selection in cropped_cords:
+                    self.assertIsInstance(selection, ImageCropSelection)
 
     def test_cropping_none_object(self) -> None:
         """Negative test that checks if the `image_crop_walk` fails when a non
@@ -124,16 +127,10 @@ class TestUtils(unittest.TestCase):
         loaded_img = load_tiff_images("./test_data/tiff_images/")
         loaded_img = list(loaded_img)
 
-        type_1 = "256"
-        type_2 = 256.0
-        type_3 = 256
+        # setting up combinations of different input types
+        type_arr = ["256", 256.0, 256]
+        type_combinations = combinations(type_arr, 2)
 
         # testing inputs all combinations
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_1, type_2)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_1, type_3)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_2, type_3)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_3, type_1)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_2, type_1)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_2, type_3)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_3, type_1)
-        self.assertRaises(TypeError, image_crop_walk, loaded_img, type_3, type_2)
+        for type_1, type_2 in type_combinations:
+            self.assertRaises(TypeError, image_crop_walk, loaded_img, type_1, type_2)

@@ -1,0 +1,24 @@
+name: macrophage-striation-unittests
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unit-test-core:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup conda env
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: macrophage-striation
+          environment-file: env.yaml
+      - run: |
+          pip install -e .
+          cd src/testing
+          python -m unittest test_core

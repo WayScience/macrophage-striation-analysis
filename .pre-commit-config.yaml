@@ -1,27 +1,37 @@
 repos:
-- repo: https://github.com/pycqa/isort
-  rev: 5.10.1
-  hooks:
-    - id: isort
-      name: isort (python)
-- repo: https://github.com/sourcery-ai/sourcery
-  rev: v0.13.0
-  hooks:
-  - id: sourcery
-    args: [--diff=git diff HEAD, --in-place, --no-summary]
-- repo: https://github.com/psf/black
-  rev: 22.10.0
-  hooks:
-  - id: black
-    language_version: python3.10
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
-  hooks:
-    - id: mixed-line-ending
-      args:
-        - "--fix=lf"
-    - id: pretty-format-json
-      args:
-        - "--autofix"
-        - "--indent=4"
-        - "--no-sort-keys"
+  # import formatter with black configurations
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: isort (python)
+        args: ["--profile", "black", "--filter-files"]
+
+  # Code formatter for both python files and jupyter notebooks
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black-jupyter
+      - id: black
+        language_version: python3.10
+
+  # AI based formatter, improves readability
+  - repo: https://github.com/sourcery-ai/sourcery
+    rev: v0.13.0
+    hooks:
+      - id: sourcery
+        args: [--diff=git diff HEAD, --in-place, --no-summary]
+
+  # additional hooks found with in the pre-commit lib
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+        args:
+          - "--fix=lf"
+      - id: pretty-format-json
+        args:
+          - "--autofix"
+          - "--indent=4"
+          - "--no-sort-keys"

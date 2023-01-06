@@ -16,7 +16,7 @@ jobs:
       - name: Setup conda env
         uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment:  macrophage-striation
+          activate-environment: macrophage-striation
           environment-file: env.yaml
       - run: |
           pip install -e .

@@ -1,9 +1,9 @@
 name: macrophage-striation-unittests
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   unit-test-core:

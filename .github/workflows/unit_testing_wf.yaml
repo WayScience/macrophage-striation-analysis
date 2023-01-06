@@ -13,7 +13,8 @@ jobs:
         shell: bash -l {0}
     steps:
       - uses: actions/checkout@v3
-      - uses: conda-incubator/setup-miniconda@v2
+      - name: Setup conda env
+        uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment:  macrophage-striation
           environment-file: env.yaml

@@ -18,7 +18,7 @@ class ImageCropSelection:
     img_size: tuple[int, int]
     crop_position: Tuple[int, int, int, int]
 
-    def to_dict(self) -> Dict[Any, Any]:
+    def to_dict(self) -> dict:
         """Converts `ImageCropSelection` entry into a dictionary type"""
         return dict(
             img_id=self.img_id,

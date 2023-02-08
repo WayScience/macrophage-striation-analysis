@@ -1,12 +1,4 @@
 repos:
-  # import formatter with black configurations
-  - repo: https://github.com/pycqa/isort
-    rev: 5.10.1
-    hooks:
-      - id: isort
-        name: isort (python)
-        args: ["--profile", "black", "--filter-files"]
-
   # Code formatter for both python files and jupyter notebooks
   - repo: https://github.com/psf/black
     rev: 22.10.0
@@ -22,7 +14,7 @@ repos:
       - id: sourcery
         args: [--diff=git diff HEAD, --in-place, --no-summary]
 
-  # additional hooks found with in the pre-commit lib
+#  additional hooks found with in the pre-commit lib
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:

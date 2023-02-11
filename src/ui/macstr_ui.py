@@ -9,14 +9,13 @@ class Ui_MainWindow(object):
         # loading in the JSON data
         with open("../../notebooks/test_image_coords.json", "r") as contents:
             image_data = yaml.safe_load(contents)
-            print(image_data["cell_image_1.tiff"])
 
         # creating main GUI window
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
+        self.centralwidget.setObjectName("Images")
 
         # ------------------------------
         # setting up image canvas

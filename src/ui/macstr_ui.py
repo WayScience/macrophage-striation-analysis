@@ -1,3 +1,16 @@
+"""
+script: macstr_ui.py
+
+Main script that deploys MacStr GUI Application.
+
+Notes:
+
+The current stock image "7-stunning-cell-images-from-2017-294838-640x360.jpg"
+is obtained from:
+https://www.technologynetworks.com/cell-science/lists/7-stunning-cell-images-from-2017-294838
+This image are used as placeholders where the cropped images should be placed.
+
+"""
 import sys
 import yaml
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -11,7 +24,7 @@ class Ui_MainWindow(object):
             image_data = yaml.safe_load(contents)
 
         # creating main GUI window
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("MacStr")
         MainWindow.resize(800, 600)
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)

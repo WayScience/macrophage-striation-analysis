@@ -4,14 +4,15 @@ Module: selection.py
 Contains data structure and functions that focuses on obtaining metadata
 from cropped images.
 """
-from dataclasses import dataclass
-from typing import Tuple, Optional
+from dataclasses import dataclass, field
+from typing import Optional
 
 
 @dataclass(slots=True)
 class ImageCropSelection:
     """Data structure containing metadata information of the selected
     cropped images.
+
 
     Attributes:
     -----------
@@ -21,15 +22,28 @@ class ImageCropSelection:
     file_name : str
         Name of the file where the cropped image came from.
 
-    crop_position : Tuple[int, int, int, int]
+    image_size : tuple [int, int]
+        Image crop size
+
+    crop_position : tuple[int, int, int, int]
         The crop position used to select cropped image
+
+    __classification : None [Private attribute]
+        This attribute is initialized as a private attribute used for declaring
+        whether the cropped image is either positive or negative for a specific
+        characterization. By default it will be set a "None" indicating that no
+        classification has been performed to the specific cropped image. 
+
     """
 
     img_id: int
     file_name: str
     img_size: tuple[int, int]
-    crop_position: Tuple[int, int, int, int]
-    classification: Optional[None | int] = None
+    crop_position: tuple[int, int, int, int]
+    
+    # private attribute
+    __classification = None
+    
 
     def to_dict(self) -> dict:
         """Converts `ImageCropSelection` entry into a dictionary type"""

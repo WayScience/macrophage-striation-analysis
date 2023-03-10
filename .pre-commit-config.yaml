@@ -1,17 +1,16 @@
 repos:
-  # remove unused imports
+   # remove unused imports
   - repo: https://github.com/hadialqattan/pycln.git
     rev: v2.1.3
     hooks:
       - id: pycln
 
-  # import formatter with black configurations
+  # import formatter
   - repo: https://github.com/pycqa/isort
     rev: 5.12.0
     hooks:
       - id: isort
         name: isort (python)
-        args: ["--profile", "black", "--filter-files"]
 
   # Code formatter for both python files and jupyter notebooks
   - repo: https://github.com/psf/black
@@ -28,7 +27,16 @@ repos:
       - id: sourcery
         args: [--diff=git diff HEAD, --in-place, --no-summary]
 
-#  additional hooks found with in the pre-commit lib
+  # python linter
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: 'v0.0.245'
+    hooks:
+      - id: ruff
+
+  #  additional hooks found with in the pre-commit lib
+  # -- remove trailing spaces
+  # -- remove mix line ending (tabs and spaces)
+  # -- JSON formatter
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
@@ -41,3 +49,4 @@ repos:
           - "--autofix"
           - "--indent=4"
           - "--no-sort-keys"
+

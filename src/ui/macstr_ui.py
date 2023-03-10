@@ -12,6 +12,7 @@ This image are used as placeholders where the cropped images should be placed.
 
 """
 import sys
+
 import yaml
 from PyQt5 import QtCore, QtGui, QtWidgets
 

@@ -1,4 +1,18 @@
 repos:
+  # remove unused imports
+  - repo: https://github.com/hadialqattan/pycln.git
+    rev: v2.1.3
+    hooks:
+      - id: pycln
+
+  # import formatter with black configurations
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort (python)
+        args: ["--profile", "black", "--filter-files"]
+
   # Code formatter for both python files and jupyter notebooks
   - repo: https://github.com/psf/black
     rev: 22.10.0

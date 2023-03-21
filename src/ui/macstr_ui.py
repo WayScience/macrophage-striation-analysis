@@ -30,9 +30,7 @@ class Ui_MainWindow(object):
         self.cell_img1.setGeometry(QtCore.QRect(30, 10, 221, 191))
         self.cell_img1.setText("")
         self.cell_img1.setPixmap(
-            QtGui.QPixmap(
-                "7-stunning-cell-images-from-2017-294838-640x360.jpg"
-            )
+            QtGui.QPixmap("7-stunning-cell-images-from-2017-294838-640x360.jpg")
         )
         self.cell_img1.setScaledContents(True)
         self.cell_img1.setProperty("img_id", 1)
@@ -41,9 +39,7 @@ class Ui_MainWindow(object):
         self.cell_img2.setGeometry(QtCore.QRect(280, 10, 221, 191))
         self.cell_img2.setText("")
         self.cell_img2.setPixmap(
-            QtGui.QPixmap(
-                "7-stunning-cell-images-from-2017-294838-640x360.jpg"
-            )
+            QtGui.QPixmap("7-stunning-cell-images-from-2017-294838-640x360.jpg")
         )
         self.cell_img2.setScaledContents(True)
         self.cell_img2.setProperty("img_id", 2)
@@ -52,9 +48,7 @@ class Ui_MainWindow(object):
         self.cell_img3.setGeometry(QtCore.QRect(530, 10, 221, 191))
         self.cell_img3.setText("")
         self.cell_img3.setPixmap(
-            QtGui.QPixmap(
-                "7-stunning-cell-images-from-2017-294838-640x360.jpg"
-            )
+            QtGui.QPixmap("7-stunning-cell-images-from-2017-294838-640x360.jpg")
         )
         self.cell_img3.setScaledContents(True)
         self.cell_img3.setProperty("img_id", 3)
@@ -63,9 +57,7 @@ class Ui_MainWindow(object):
         self.cell_img4.setGeometry(QtCore.QRect(30, 260, 221, 191))
         self.cell_img4.setText("")
         self.cell_img4.setPixmap(
-            QtGui.QPixmap(
-                "7-stunning-cell-images-from-2017-294838-640x360.jpg"
-            )
+            QtGui.QPixmap("7-stunning-cell-images-from-2017-294838-640x360.jpg")
         )
         self.cell_img4.setScaledContents(True)
         self.cell_img4.setProperty("img_id", 4)
@@ -74,9 +66,7 @@ class Ui_MainWindow(object):
         self.cell_img5.setGeometry(QtCore.QRect(280, 260, 221, 191))
         self.cell_img5.setText("")
         self.cell_img5.setPixmap(
-            QtGui.QPixmap(
-                "7-stunning-cell-images-from-2017-294838-640x360.jpg"
-            )
+            QtGui.QPixmap("7-stunning-cell-images-from-2017-294838-640x360.jpg")
         )
         self.cell_img5.setScaledContents(True)
         self.cell_img5.setProperty("img_id", 5)
@@ -85,9 +75,7 @@ class Ui_MainWindow(object):
         self.cell_img6.setGeometry(QtCore.QRect(530, 260, 221, 191))
         self.cell_img6.setText("")
         self.cell_img6.setPixmap(
-            QtGui.QPixmap(
-                "7-stunning-cell-images-from-2017-294838-640x360.jpg"
-            )
+            QtGui.QPixmap("7-stunning-cell-images-from-2017-294838-640x360.jpg")
         )
         self.cell_img6.setScaledContents(True)
         self.cell_img6.setProperty("img_id", 6)
@@ -149,9 +137,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MacStr"))
         self.refresh_btn.setText(_translate("MainWindow", "Reload"))
-        self.refresh_btn.setProperty(
-            "button_id", _translate("MainWindow", "reload")
-        )
+        self.refresh_btn.setProperty("button_id", _translate("MainWindow", "reload"))
         self.btn1.setText(_translate("MainWindow", "No Striation"))
         self.btn1.setProperty("button_id", _translate("MainWindow", "1"))
         self.btn2.setText(_translate("MainWindow", "No Striation"))

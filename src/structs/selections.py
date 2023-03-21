@@ -31,7 +31,7 @@ class ImageCropSelection:
         This attribute is initialized as a private attribute used for declaring
         whether the cropped image is either positive or negative for a specific
         characterization. By default it will be set a "None" indicating that no
-        classification has been performed to the specific cropped image. 
+        classification has been performed to the specific cropped image.
 
     """
 
@@ -39,10 +39,9 @@ class ImageCropSelection:
     file_name: str
     img_size: tuple[int, int]
     crop_position: tuple[int, int, int, int]
-    
+
     # private attribute
     __classification = None
-    
 
     def to_dict(self) -> dict:
         """Converts `ImageCropSelection` entry into a dictionary type"""
@@ -51,5 +50,5 @@ class ImageCropSelection:
             file_name=self.file_name,
             img_size=self.img_size,
             crop_position=self.crop_position,
-            classification=self.__classification
+            classification=self.__classification,
         )

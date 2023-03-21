@@ -1,22 +1,24 @@
 """
 Module: actions.py
 
-actions.py stores all the functional actions that the UI will trigger when a 
-user interacts with the interface. 
+actions.py stores all the functional actions that the UI will trigger when a
+user interacts with the interface.
 """
 from src.common.errors import ConfigAttributeNotFound
+
 
 def load_images_to_ui():
     pass
 
+
 def update_image_classification(crop_image_metadata: dict, value_update: bool):
     """Updates classification attribute with the cropped image metadata.
-    Classification 
+    Classification
 
     Parameters
     ----------
     crop_image_metadata : dict
-        cropped image metadata 
+        cropped image metadata
 
     value_update : bool
 
@@ -36,35 +38,7 @@ def update_image_classification(crop_image_metadata: dict, value_update: bool):
     try:
         crop_image_metadata["classification"] = value_update
     except KeyError as e:
-        raise ConfigAttributeNotFound(
-            "classification attributes does not exist"
-        ) from e
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        raise ConfigAttributeNotFound("classification attributes does not exist") from e
 
 
 # -----------------

@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>7-stunning-cell-images-from-2017-294838-640x360.jpg</pixmap>
+     <pixmap>cell-images.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -49,7 +49,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>7-stunning-cell-images-from-2017-294838-640x360.jpg</pixmap>
+     <pixmap>cell-images.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -71,7 +71,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>7-stunning-cell-images-from-2017-294838-640x360.jpg</pixmap>
+     <pixmap>cell-images.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -93,7 +93,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>7-stunning-cell-images-from-2017-294838-640x360.jpg</pixmap>
+     <pixmap>cell-images.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -115,7 +115,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>7-stunning-cell-images-from-2017-294838-640x360.jpg</pixmap>
+     <pixmap>cell-images.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -137,7 +137,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>7-stunning-cell-images-from-2017-294838-640x360.jpg</pixmap>
+     <pixmap>cell-images.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

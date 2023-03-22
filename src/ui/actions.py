@@ -7,10 +7,6 @@ user interacts with the interface.
 from src.common.errors import ConfigAttributeNotFound
 
 
-def load_images_to_ui():
-    pass
-
-
 def update_image_classification(
     crop_image_metadata: dict, classification_label: bool
 ) -> None:

@@ -10,4 +10,4 @@ class NotCoordArrayError(TypeError):
 
 
 class ConfigAttributeNotFound(ValueError):
-    """Raised if attempting to access config attribute that does not exists"""
+    """Raised if attempting to access config attribute that does not exist"""
